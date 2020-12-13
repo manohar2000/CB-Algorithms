@@ -1,4 +1,5 @@
-# Algo-
+# Coding Block's Algorithm++ course
+
 Important algorithms topic wise:
 
 
