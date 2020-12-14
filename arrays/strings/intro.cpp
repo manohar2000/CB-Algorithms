@@ -10,10 +10,10 @@ bool compare(string a,string b)
 }
 int main()
 {
-    string s("hello mc");
+    string s("hello");
     cout<<s<<endl;
     
-    string s2 = "aur kya chal rha hain";
+    string s2 = "everyone";
     cout<<s2<<endl;
     cout<<"length:"<<s2.length()<<endl;
     
@@ -22,7 +22,7 @@ int main()
     
     cout<<s3<<endl;
     
-    string arr[] = {"bkl","mc","bsdk"};
+    string arr[] = {"apple","banana","orange"};
     sort(arr,arr+3,compare);
     
     for(int i=0;i<3;i++)
