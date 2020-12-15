@@ -15,4 +15,4 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 6 | 2d matrix wave print | [@waveprint](https://github.com/manohar2000/CB-Algorithms/blob/main/arrays/2d-array/waveform.cpp) | If column odd traverse from bottom to top, if column is even traverse from top to botton | 14th Dec |
 7 | Rotate 2d matrix anticlockwise | [@rotateArray](https://github.com/manohar2000/CB-Algorithms/blob/main/arrays/2d-array/rotate_array.cpp) | Reverse rows/columns then transpose | 14th Dec |
 8 | Staircase search | [@staircase](https://github.com/manohar2000/CB-Algorithms/blob/main/arrays/2d-array/staircase_search.cpp) | start top right, if curr>k j-=1 else i+=1 | 14th Dec |
-9 | Sorting string based on token | [@sortingStrings](@https://github.com/manohar2000/CB-Algorithms/blob/main/arrays/Strings/StringsChallenge.cpp) | tokenization,custom comparators,pairs | 15th Dec |
+9 | Sorting string based on token | [@sortingStrings](https://github.com/manohar2000/CB-Algorithms/blob/main/arrays/Strings/StringsChallenge.cpp) | tokenization,custom comparators,pairs | 15th Dec |
