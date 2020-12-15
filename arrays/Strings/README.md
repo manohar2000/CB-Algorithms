@@ -8,5 +8,5 @@
 7. Finding index of a word : s.find("word") This would return the index of starting letter of the given word
 8. Erasing a word from a string : s.erase(index_of_word,len_of_word)
 9. Iterating over a string : Loop like on the array, iterator pointer , for(auto c:s1){ cout<<c}
-**10. Tokenizing words in a string : strtok()**
-**11. Getting the char arr for a string: (char asterix)str.c_str**
+10. **Tokenizing words in a string : strtok()**
+11. **Getting the char arr for a string: (char asterix)str.c_str**
