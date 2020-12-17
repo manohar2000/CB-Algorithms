@@ -1,22 +1,21 @@
 #include <iostream>
 using namespace std;
 
+
 void insertionsort(int arr[], int n)
 {
-    for(int i=1;i<n;i++)
+    int min = arr[0];
+    for(int i=0;i<n-1;i++)
     {
-        int num = arr[i];
-        int j = i-1;
-        while(j>=0 && arr[j]>num)        
+        for(int j=i+1;j<n;j++)
         {
-            arr[j+1] = arr[j];
-            j--;
+            if(arr[j]<arr[i])
+            {
+                swap(arr[i],arr[j]);
+            }
         }
-        arr[j+1] = num;
     }
-
 }
-
 
 int main()
 {
