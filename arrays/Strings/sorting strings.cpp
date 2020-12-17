@@ -5,6 +5,7 @@ using namespace std;
 
 bool compare(string a, string b)
 {
+    // the in-built sorting algorithm swaps the elements when our comparator function returns True.
     if(a.length()>b.length())
     {
         return a>b;
