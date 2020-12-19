@@ -20,7 +20,7 @@ int getIndex(char arr[],int n)
         }
     }
 
-    return ans+1;
+    return ans+1; //ans is storing only the number of lucky numbers before the asked no.. Therefore the actual index will be +1.
 }
 
 
