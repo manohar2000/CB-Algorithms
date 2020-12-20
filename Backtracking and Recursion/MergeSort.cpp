@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+
+// NOT WORKING
+
 void merge(int arr[],int start, int end)
 {
     int mid = (start+end)/2;
@@ -57,6 +60,7 @@ int main()
 {
     int n;
     cin>>n;
+    cin.get();
     int arr[n];
 
     for(int i=0;i<n;i++)
