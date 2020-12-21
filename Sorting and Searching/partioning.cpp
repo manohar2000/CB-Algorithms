@@ -21,6 +21,8 @@ void partition(int arr[],int n,int p)
         }
     }
 
+    cout<<"partionining index: "<<j<<endl;
+
 }
 
 
