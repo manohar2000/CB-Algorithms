@@ -16,3 +16,20 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 7 | Rotate 2d matrix anticlockwise | [@rotateArray](https://github.com/manohar2000/CB-Algorithms/blob/main/arrays/2d-array/rotate_array.cpp) | Reverse rows/columns then transpose | 14th Dec |
 8 | Staircase search | [@staircase](https://github.com/manohar2000/CB-Algorithms/blob/main/arrays/2d-array/staircase_search.cpp) | start top right, if curr>k j-=1 else i+=1 | 14th Dec |
 9 | Sorting string based on token | [@sortingStrings](https://github.com/manohar2000/CB-Algorithms/blob/main/arrays/Strings/StringsChallenge.cpp) | tokenization,custom comparators,pairs | 15th Dec |
+
+
+## Sorting and Searching
+
+Sno | Topic Name | My Solution | Logic Used | Date Completed |
+----|------------|-------------|------------|----------------| 
+1 | Bubble Sort | [@bubleSort](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/bubble%20sort.cpp) | placing the largest element in the last place of the unsorted array in subsequent iterations | 17th Dec |
+2 | Selection Sort | [@selectionSort](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/selection_sort.cpp) | place the smallest element in the first index of the unsorted array in subsequents iterations | 17th Dec |
+3 | Insertion Sort | [@insertionSort](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/insertion_sort.cpp) | sorting left side of the array | 17th Dec |
+4 | Counting Sort | [@countingsort](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/counting_sort.py) | storing a cummulative freq array. | 17th Dec |
+5 | Wave Sort | [@wavesort](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/wave_sort.cpp) | making each even index as local minima | 17th Dec |
+6 | Binary Search | [@binarysearch](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/binary_search.cpp) | comparing the key with middle element and accordingly changing the mid-point | 17th Dec |
+7 | lower/upper bound of an element | [@1st/last occurence](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/lower_upper_bound.cpp) | increasing/reducing the start/end for first/last occ respectively | 17th Dec |
+8 | Sqrt of a no. with x precision | [@sqrt](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/sqrt.cpp) | for int part apply binary search on 0 to n, for decimal inc iteratively and check sqaure of ans | 18th Dec |
+9 | Searching rotated sorted arr | [@srs](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/searching_in_rotated.cpp) | searching in 3 parts of array(visualize the graph of arr) | 18th Dec |
+10 | Book Allocation Prob | [@allocation](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/book_allocation_prob.cpp) | binary search on range of total pages | 18th Dec |
+11 | Partioning | [@partioning](https://github.com/manohar2000/CB-Algorithms/blob/main/Sorting%20and%20Searching/partioning.cpp) | two indices from start and replacing arr[i++] and arr[j++] if i++ is less | 20th Dec |
