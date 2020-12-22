@@ -41,4 +41,11 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 1 | Generating all subsequences of a string| [@subsequences](https://github.com/manohar2000/CB-Algorithms/blob/main/Bitmasking/generating_subsequences.cpp) | generating all pow(2,n-1) masks and applying & b/w string and mask | 19th Dec |
 2 | Index of lucky number | [@lucky no](https://github.com/manohar2000/CB-Algorithms/blob/main/Bitmasking/index_of_lucky_no.cpp) | permutation and combination | 19th Dec |
 
+## Number Theory
+
+Sno | Topic Name | My Solution | Logic Used | Date Completed |
+----|------------|-------------|------------|----------------| 
+1 | Prime no. or not | [@isprime](https://github.com/manohar2000/CB-Algorithms/blob/main/NumberTheory/primeTilln.cpp) | Prime Seive | 20th Dec |
+2 | SubArrayDivisiblebyN | [@subdivbyN](https://github.com/manohar2000/CB-Algorithms/blob/main/NumberTheory/subArrayDivisiblebyN.cpp) | cal modulo prefix sum, and calculate combination | 21st Dec |
+
 
