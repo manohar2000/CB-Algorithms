@@ -2,7 +2,7 @@
 using namespace std;
 
 
-void insertionsort(int arr[], int n)
+void selectionsort(int arr[], int n)
 {
     int min = arr[0];
     for(int i=0;i<n-1;i++)
@@ -29,7 +29,7 @@ int main()
         cin>>arr[i];
     }
 
-    insertionsort(arr,n);
+    selectionsort(arr,n);
         for(int i=0;i<n;i++)
     {
         cout<<arr[i]<<" ";
