@@ -48,4 +48,16 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 1 | Prime no. or not | [@isprime](https://github.com/manohar2000/CB-Algorithms/blob/main/NumberTheory/primeTilln.cpp) | Prime Seive | 20th Dec |
 2 | SubArrayDivisiblebyN | [@subdivbyN](https://github.com/manohar2000/CB-Algorithms/blob/main/NumberTheory/subArrayDivisiblebyN.cpp) | cal modulo prefix sum, and calculate combination | 20th Dec |
 
-
+## Recursion and Backtracking
+Sno | Topic Name | My Solution | Logic Used | Date Completed |
+----|------------|-------------|------------|----------------| 
+1 | Power of N | [@powOfN](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/PowerOfN.cpp) | reducing b in each rec call, base is b==0 | 20th Dec |
+2 | Ascending/Descending till N | [@PrintingN](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/printingNo.cpp) | concept of call stack | 20th Dec |
+3 | StringToInt | [@stringToInt](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/StringToInt.cpp) | char[i]-'0' + funccall with i+1, until i>=n ] | 20th Dec |
+4 | IntToSpelling | [@2048](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/IntToSpelling.cpp) | generating a map of int and recursion with (n/10) until n==0 | 20th Dec |
+5 | BinarySearchRec | [@binarySearch](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/binarySearchRec.cpp) | rec with change of (low,high) until low>=high | 20th Dec |
+6 | Bubble Sort Rec | [@bubbleSort](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/bubbleSort.cpp) | call rec till j+1 and swapping if j==n-1 then n-=1 until n==1 | 20th Dec |
+7 | Merge Sort Rec | | | 20th Dec |
+8 | Quick Sort Rec | | | 20th Dec |
+9 | Generating Subsequences | | | 21st Dec |
+10 | KeyPad Substrings | | | 21st Dec |
