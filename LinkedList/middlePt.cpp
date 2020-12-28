@@ -107,37 +107,21 @@ void buildlist(node*&head)
     }
 }
 
-
-void reverseLL(node*&head)
+int midPoint(node* &head)
 {
-    node* curr = head;
-    node* prev = NULL;
-    node* N;
+    if(head==NULL) return 0;
+    if(head->next==NULL) return head->data;
 
-    while(curr!=NULL)
-    {
-        N = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = N;
-    }
-    head = prev;
-    
-}
+    node* slow_ptr = head;
+    node* fast_ptr = head->next;
 
-node* reverseRec(node* head)
-{
-    if(head==NULL || head->next==NULL)
+    while(fast_ptr!=NULL && fast_ptr->next!=NULL)
     {
-        return head;
+        slow_ptr = slow_ptr->next;
+        fast_ptr = fast_ptr->next->next;
     }
 
-    node* smallHead = reverseRec(head->next);
-    node* C = head;
-    C->next->next = C;
-    C->next = NULL;
-    return smallHead;
-
+    return slow_ptr->data;
 }
 
 
@@ -151,14 +135,13 @@ int main()
     insertAtHead(head,100);
     insertAtHead(head,200);
     insertInMiddle(head, 75,1);
-    insertAtTail(head,500);   
+    insertAtTail(head,500);
 
-    printLL(head);
-
-    reverseLL(head);
-
+    
+    printLL(head);    
     cout<<endl;
-    printLL(head);
+
+    cout<<midPoint(head)<<endl;
     
     return 0;
 }
