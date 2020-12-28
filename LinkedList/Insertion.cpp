@@ -96,7 +96,7 @@ void printLL(node*head)
 
 }
 
-void inp(node*&head)
+void buildlist(node*&head)
 {
     int data;
     cin>>data;
@@ -108,9 +108,24 @@ void inp(node*&head)
 }
 
 
+istream& operator>>(istream &is,node*&head)
+{
+    buildlist(head);
+    return is;
+}
+
+ostream& operator<<(ostream &os,node*&head)
+{
+    printLL(head);
+    return os;
+}
+
+
+
+
 int main()
 {
-    node *head = NULL;
+    //node *head = NULL;
     /*
     insertAtHead(head,50);
     insertAtHead(head,100);
@@ -120,8 +135,18 @@ int main()
 
     insertInMiddle(head, 75,1);
     */
-   inp(head);   
 
-    printLL(head);
+    // Taking input from input
+    //buildlist(head);   
+
+    //overloading the cin and cout operator
+
+    node* head = NULL;
+    node* head2 = NULL;
+    cin>>head>>head2;
+    cout<<head<<endl<<head2;
+
+
+    //printLL(head);
     return 0;
 }
