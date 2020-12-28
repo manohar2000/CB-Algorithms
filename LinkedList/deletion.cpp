@@ -96,32 +96,80 @@ void printLL(node*head)
 
 }
 
-void inp(node*&head)
+// ------------------DELETION PART-----------------------------------------//
+
+void deleteAtTail(node* &head)
 {
-    int data;
-    cin>>data;
-    while(data!=-1)
+    node* temp = head;
+    node* prev;
+    while(temp->next!=NULL)
     {
-        insertAtTail(head,data);
-        cin>>data;        
+        prev = temp;
+        temp = temp->next;
     }
+
+    prev->next = NULL;
+    delete temp;
+
+}
+
+void deleteAtHead(node *&head)
+{
+    if(head==NULL) return;
+    node* temp = head;
+    head = head->next;
+    delete temp;
+
+}
+
+
+void deleteAtMiddle(node *&head, int p)
+{
+    if(p>length(head)) return;
+    if(p==length(head))
+    {
+        deleteAtTail(head);
+    }
+    if(p==0)
+    {
+         deleteAtHead(head);
+    }
+    node* temp = head;
+    node* prev=NULL;
+    int i=0;
+    while(i<p && temp!=NULL)
+    {
+        prev = temp;
+        temp = temp->next;
+        i+=1;
+    }
+
+    prev->next = temp->next;
+    delete temp;
+    return;
 }
 
 
 int main()
 {
     node *head = NULL;
-    /*
     insertAtHead(head,50);
     insertAtHead(head,100);
     insertAtHead(head,200);
 
     insertAtTail(head,500);
 
-    insertInMiddle(head, 75,1);
-    */
-   inp(head);   
+    insertInMiddle(head, 75,1);   
 
+    printLL(head);
+    cout<<endl;
+
+    deleteAtHead(head);
+    deleteAtTail(head);
+    printLL(head);
+    cout<<endl;
+
+    deleteAtMiddle(head, 0);
     printLL(head);
     return 0;
 }

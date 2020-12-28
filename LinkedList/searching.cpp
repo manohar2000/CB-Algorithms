@@ -96,22 +96,37 @@ void printLL(node*head)
 
 }
 
-void inp(node*&head)
+
+bool searchRec(node *head, int key)
 {
-    int data;
-    cin>>data;
-    while(data!=-1)
+    if(head==NULL) return false;
+
+    else if(head->data==key) return true;
+
+    else return searchRec(head->next,key);
+
+}
+
+bool searchIter(node *head, int key)
+{
+    node* temp = head;
+    while(temp!=NULL)
     {
-        insertAtTail(head,data);
-        cin>>data;        
+        if(temp->data==key)
+        {
+            return true;
+            break;
+        }
+        temp = temp->next;
     }
+
+    return false;
 }
 
 
 int main()
 {
     node *head = NULL;
-    /*
     insertAtHead(head,50);
     insertAtHead(head,100);
     insertAtHead(head,200);
@@ -119,9 +134,14 @@ int main()
     insertAtTail(head,500);
 
     insertInMiddle(head, 75,1);
-    */
-   inp(head);   
 
     printLL(head);
+    cout<<endl;
+
+    cout<<searchRec(head,500)<<endl;
+
+    cout<<searchIter(head,200)<<endl;
+
+
     return 0;
 }
