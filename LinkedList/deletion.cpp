@@ -62,7 +62,12 @@ void insertInMiddle(node*&head, int data, int p)
 {
     if(head==NULL||p==0) insertAtHead(head,data);
 
-    if(p>length(head)) insertAtTail(head,data);
+    else if(p>length(head)) insertAtTail(head,data);
+
+    else
+    {       
+    
+    
 
     int i = 0;
     node* temp = head;
@@ -77,6 +82,7 @@ void insertInMiddle(node*&head, int data, int p)
     temp->next = middle;
 
     return;
+    }
 
 }
 
@@ -126,14 +132,15 @@ void deleteAtHead(node *&head)
 void deleteAtMiddle(node *&head, int p)
 {
     if(p>length(head)) return;
-    if(p==length(head))
+    else if(p==length(head))
     {
         deleteAtTail(head);
     }
-    if(p==0)
+    else if(p==0)
     {
          deleteAtHead(head);
     }
+    else{
     node* temp = head;
     node* prev=NULL;
     int i=0;
@@ -147,6 +154,7 @@ void deleteAtMiddle(node *&head, int p)
     prev->next = temp->next;
     delete temp;
     return;
+    }
 }
 
 
@@ -159,15 +167,14 @@ int main()
 
     insertAtTail(head,500);
 
-    insertInMiddle(head, 75,1);   
+    insertInMiddle(head, 75,0);   
 
     printLL(head);
     cout<<endl;
 
     deleteAtHead(head);
     deleteAtTail(head);
-    printLL(head);
-    cout<<endl;
+
 
     deleteAtMiddle(head, 0);
     printLL(head);
