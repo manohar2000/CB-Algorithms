@@ -125,6 +125,21 @@ void reverseLL(node*&head)
     
 }
 
+node* reverseRec(node* head)
+{
+    if(head==NULL || head->next==NULL)
+    {
+        return head;
+    }
+
+    node* smallHead = reverseRec(head->next);
+    node* C = head;
+    C->next->next = C;
+    C->next = NULL;
+    return smallHead;
+
+}
+
 
 int main()
 {
