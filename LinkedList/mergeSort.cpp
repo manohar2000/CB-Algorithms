@@ -120,20 +120,54 @@ node* merge(node* a,node* b)
         return c; // returning the small node
         
     }
-
-    
-    
 }
 
+node* midPoint(node* &head)
+{
+    if(head==NULL) return head;
+    if(head->next==NULL) return head;
+
+    node* slow_ptr = head;
+    node* fast_ptr = head->next;
+
+    while(fast_ptr!=NULL && fast_ptr->next!=NULL)
+    {
+        slow_ptr = slow_ptr->next;
+        fast_ptr = fast_ptr->next->next;
+    }
+
+    return slow_ptr;
+}
+
+
+node* mergesort(node*&head)
+{
+    if(head==NULL || head->next==NULL) return head;
+
+    else
+    {
+        node*mid = midPoint(head);
+        node* a = head;
+        node* b = mid->next;
+        mid->next = NULL;
+
+        a = mergesort(a);
+        b = mergesort(b);
+        node* c = merge(a,b);
+
+        return c;
+    }
+
+    
+}
 
 int main()
 {
     node* head = NULL;
-    node* head2 = NULL;
-    cin>>head>>head2;
-    cout<<head<<endl<<head2<<endl;;   
+    cin>>head;
+    cout<<head<<endl;
 
-    head = merge(head,head2);
+    head = mergesort(head);
     cout<<head<<endl;
 
     return 0;
