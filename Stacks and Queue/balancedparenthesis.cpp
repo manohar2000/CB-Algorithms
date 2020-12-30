@@ -20,7 +20,6 @@ bool isBalanced(string str)
     return s.empty();
 }
 
-
 int main()
 {
     string s;
