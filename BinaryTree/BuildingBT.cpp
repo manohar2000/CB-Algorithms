@@ -35,13 +35,33 @@ node* buildTree()
 }
 
 
-void printTree(node* root)
+void printPreOrder(node* root)
 {
     if(root==NULL) return;
 
     cout<<root->data<<" ";
-    printTree(root->left);
-    printTree(root->right);
+    printPreOrder(root->left);
+    printPreOrder(root->right);
+
+}
+
+
+void printInorder(node* root)
+{
+    if(root==NULL) return;
+
+    printInorder(root->left);
+    cout<<root->data<<" ";
+    printInorder(root->right);
+}
+
+void printPostOrder(node* root)
+{
+    if(root==NULL) return;
+
+    printPostOrder(root->left);
+    printPostOrder(root->right);
+    cout<<root->data<<" ";
 
 }
 
@@ -49,6 +69,11 @@ void printTree(node* root)
 int main()
 {
     node* root = buildTree();
-    printTree(root);
+    printPreOrder(root);
+    cout<<endl;
+    printInorder(root);
+    cout<<endl;
+    printPostOrder(root);
+    cout<<endl;
     return 0;
 }
