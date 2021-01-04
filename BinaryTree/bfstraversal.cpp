@@ -38,16 +38,32 @@ void bfs(node* root)
 {
     queue<node*> q;
     q.push(root);
+    q.push(NULL); // to print every level in new lines
 
     while(!q.empty())
     {
         node* f = q.front();
-        q.pop();
-        cout<<f->data<<" ";        
 
-        if(f->left) q.push(f->left);
+        // including null after every level. We will print normally and will add a null only when previous level's nodes have been printed completely.
+        if(f==NULL)
+        {
+            q.pop();
+            if(!q.empty())
+            {
+                cout<<endl;
+                q.push(NULL); // we add null only until the queue is not empty, else it will become an infinite loop/
+            }
+        }
 
-        if(f->right) q.push(f->right);
+        else
+        {
+            q.pop();
+            cout<<f->data<<" ";        
+
+            if(f->left) q.push(f->left);
+
+            if(f->right) q.push(f->right);
+        }
     }
 }
 
