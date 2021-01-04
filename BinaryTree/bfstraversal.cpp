@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 class node
@@ -30,35 +31,32 @@ node* buildtree()
 }
 
 
-int heightOfTree(node* root)
+// Building a queue in which we had store both the children of the root node
+// and keep on iteratively popping them and push their children into the queue.
+
+void bfs(node* root)
 {
-    
-    if(root==NULL) return 0;
+    queue<node*> q;
+    q.push(root);
 
-    int lh = heightOfTree(root->left);
-    int rh = heightOfTree(root->right);
-    return max(lh,rh) + 1; 
-}
-
-
-void printKthLevel(node* root, int k)
-{
-    if(root==NULL) return;
-
-    if(k==1)
+    while(!q.empty())
     {
-        cout<<root->data<<" ";
-        return;
-    }
+        node* f = q.front();
+        q.pop();
+        cout<<f->data<<" ";        
 
-    printKthLevel(root->left, k-1);
-    printKthLevel(root->right, k-1);
+        if(f->left) q.push(f->left);
+
+        if(f->right) q.push(f->right);
+    }
 }
+
+
+
 
 int main()
 {
     node* root = buildtree();
-    cout<<heightOfTree(root)<<endl;
-    printKthLevel(root,3);
+    bfs(root);
     return 0;
 }
