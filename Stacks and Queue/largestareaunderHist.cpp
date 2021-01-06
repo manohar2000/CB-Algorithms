@@ -59,11 +59,15 @@ void largestArea(int arr[],int size)
 
     // ans would equal to (r-l-1)*curr_len
     int ans[size];
+    int max = -1;
     for(int i = 0;i<size;i++)
     {
         ans[i] = (rmin[i] - lmin[i] - 1)*arr[i];
+        if(ans[i]>max) max = ans[i];
         cout<<ans[i]<<" ";
     }   
+
+    cout<<max;
 
 
 }
