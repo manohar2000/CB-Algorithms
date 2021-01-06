@@ -2,6 +2,13 @@
 #include <climits>
 using namespace std;
 
+
+/*
+Objective : To check if the given tree is a BST or not.
+Solution : Check if current node is >= than the max value in the left sub-tree 
+and <= min value in the right subtree recursively
+*/
+
 class node
 {
     public:
