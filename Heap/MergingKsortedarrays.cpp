@@ -30,6 +30,7 @@ vector<int> mergeKSortedArray(vector<vector<int>> arr)
         {
             pq.push({arr[i][j+1], {i,j+1}});
         }
+
         
     }
 
