@@ -47,7 +47,7 @@ int main()
 
         else
         {    
-            if(rightmin.size()>0 && rightmin.top()<data) rightmin.push(data);
+            if(rightmin.size()>0 && rightmin.top()<data) rightmin.push(data); 
             else leftmax.push(data);
 
 
