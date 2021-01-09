@@ -1,6 +1,7 @@
 #include <iostream>
 #include <map>
 #include <list>
+#include <queue>
 using namespace std;
 
 
@@ -38,18 +39,46 @@ class Graph
             cout<<endl;
         }
     }
+
+
+    void bfs(T src)
+    {
+        map<T,bool> visited;
+        queue <T> q;
+        q.push(src);
+        visited[src] = true;
+
+        while(!q.empty())
+        {
+            T node = q.front();
+            cout<<node<<" ";
+            q.pop();
+            
+            for(auto i:adjList[node])
+            {
+                if(visited[i]==false)
+                {
+                    q.push(i);
+                    visited[i]=true;
+                }
+            }
+        }
+    }
 };
 
 int main()
 {
+    Graph<int> g;
 
-    Graph<string> g;
-    g.addNode("Putin","Trump",false);
-    g.addNode("Putin","Modi",false);
-    g.addNode("Putin","Pope",false);
-    g.addNode("Modi","Yogi",true);
-    g.addNode("Modi","Prabhu",true);
+    g.addNode(0,1);
+    g.addNode(0,4);
+    g.addNode(4,3);
+    g.addNode(1,4);
+    g.addNode(1,2);
+    g.addNode(2,3);
+    g.addNode(2,3);
 
-    g.printList();
+    //g.printList();
+    g.bfs(0);
 
 }
