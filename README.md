@@ -54,10 +54,13 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 1 | Power of N | [@powOfN](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/PowerOfN.cpp) | reducing b in each rec call, base is b==0 | 20th Dec |
 2 | Ascending/Descending till N | [@PrintingN](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/printingNo.cpp) | concept of call stack | 20th Dec |
 3 | StringToInt | [@stringToInt](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/StringToInt.cpp) | char[i]-'0' + funccall with i+1, until i>=n ] | 20th Dec |
-4 | IntToSpelling | [@2048](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/IntToSpelling.cpp) | generating a map of int and recursion with (n/10) until n==0 | 20th Dec |
-5 | BinarySearchRec | [@binarySearch](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/binarySearchRec.cpp) | rec with change of (low,high) until low>=high | 20th Dec |
-6 | Bubble Sort Rec | [@bubbleSort](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/bubbleSort.cpp) | call rec till j+1 and swapping if j==n-1 then n-=1 until n==1 | 20th Dec |
-7 | Merge Sort Rec | | | 20th Dec |
-8 | Quick Sort Rec | | | 20th Dec |
-9 | Generating Subsequences | | | 21st Dec |
-10 | KeyPad Substrings | | | 21st Dec |
+4 | IntToSpelling | [2048](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/IntToSpelling.cpp) | generating a map of int and recursion with (n/10) until n==0 | 20th Dec |
+5 | BinarySearchRec | [binarySearch](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/binarySearchRec.cpp) | rec with change of (low,high) until low>=high | 20th Dec |
+6 | Bubble Sort Rec | [bubbleSort](https://github.com/manohar2000/CB-Algorithms/blob/main/Backtracking%20and%20Recursion/bubbleSort.cpp) | call rec till j+1 and swapping if j==n-1 then n-=1 until n==1 | 20th Dec |
+7 | Merge Sort Rec | [MergeSort](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/MergeSort.cpp) | constantly merging the array until start>=end, calling merge function to combine two arrays | 20th Dec |
+8 | Quick Sort Rec | [quicksort](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/quicksort.cpp) | recursively partition around the last element until start>=end | 20th Dec |
+9 | Generating Subsequences | [generatingsubseq](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/generating_subsequences.cpp) | ! Review from video ! | 21st Dec |
+10 | KeyPad Substrings | [keypadSubstr](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/keypadSubstrings.cpp) | iterating through 3 values(e.g 2-"abc") and calling recursion func for i+1(inp arr) and j+1(out arr) | 21st Dec |
+11 | Rat in a maze | [rateInmaze](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/RatInaMaze.cpp) | for every i,j check if "X" is present return false or if reached m,n then return true else call for func for down(i+1,j) and right(i,j+1) and mark it as 1. Mark 0 after both func are called | 22nd Dec |
+12 | N-Queen | [N-queen](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/N-Queen.cpp) | call recursively for row+1. construct 3 bit arrays:column,diag 1 and diag2. for every call loop from c=0 to n and check if that index is occupied in the array. | 22nd Dec |
+13 | Suduko Solver | [suduko](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/SudukoSolver.cpp)| for all empty cells try to fill no. from 1 to 9 and build a function canplace(), which checks if the no. can be placed or not. call recursively for j+1 until row end and then i+1 | 22nd Dec |
