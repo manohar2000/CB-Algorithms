@@ -59,7 +59,6 @@ class Graph
         } 
 
         return false;
-
     }    
 };
 
