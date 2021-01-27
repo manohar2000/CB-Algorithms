@@ -64,3 +64,17 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 11 | Rat in a maze | [rateInmaze](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/RatInaMaze.cpp) | for every i,j check if "X" is present return false or if reached m,n then return true else call for func for down(i+1,j) and right(i,j+1) and mark it as 1. Mark 0 after both func are called | 22nd Dec |
 12 | N-Queen | [N-queen](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/N-Queen.cpp) | call recursively for row+1. construct 3 bit arrays:column,diag 1 and diag2. for every call loop from c=0 to n and check if that index is occupied in the array. | 22nd Dec |
 13 | Suduko Solver | [suduko](https://github.com/manohar2000/CB-Algorithms/blob/main/Recursion%20and%20Backtracking/SudukoSolver.cpp)| for all empty cells try to fill no. from 1 to 9 and build a function canplace(), which checks if the no. can be placed or not. call recursively for j+1 until row end and then i+1 | 22nd Dec |
+
+
+## Linked List
+Sno | Topic Name | My Solution | Logic Used | Date Completed |
+----|------------|-------------|------------|----------------| 
+1 | Insertion | [insertion](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/Insertion.cpp) | pointers | 28th Dec |
+2 | Searching | [searching](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/searching.cpp) | recursion;iteratively | 28th Dec |
+3 | Middle element of LL | [middle](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/middlePt.cpp) | slow ptr and fast ptr | 28th Dec |
+4 | Reverse | [reverse](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/reverse.cpp) | two adjacent ptrs | 28th Dec |
+5 | Deletion | [deletion](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/deletion.cpp) | two adjacent ptrs | 28th Dec |
+6 | Finding kth element from last | [findingKth](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/FindingKthFromLast.cpp) | traverse the fast ptr till k from head keeping the slow ptr at head. Then move both ptrs until fast reaches tail | 28th Dec |
+7 | Merging Sorted LL | [mergeLL](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/mergingSortedLL.cpp) | create new ll; recursion | 29th Dec |
+8 | MergeSort using LL| [mergesort](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/mergeSort.cpp) | combination of finding mid point and merging two sorted LL | 29th Dec |
+9 | Detecting cycle in LL | [detectCycle](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/CycleDetection.cpp) | slow and fast ptrs; fast moves two steps and slow move one; if slow==fast then cycle is present; if we want find the start of the cycle, move the slow to head and move both ptrs one step, the point where the meet is the start==fast is the start of cycle | 29th Dec |
