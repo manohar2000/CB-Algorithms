@@ -78,3 +78,21 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 7 | Merging Sorted LL | [mergeLL](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/mergingSortedLL.cpp) | create new ll; recursion | 29th Dec |
 8 | MergeSort using LL| [mergesort](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/mergeSort.cpp) | combination of finding mid point and merging two sorted LL | 29th Dec |
 9 | Detecting cycle in LL | [detectCycle](https://github.com/manohar2000/CB-Algorithms/blob/main/LinkedList/CycleDetection.cpp) | slow and fast ptrs; fast moves two steps and slow move one; if slow==fast then cycle is present; if we want find the start of the cycle, move the slow to head and move both ptrs one step, the point where the meet is the start==fast is the start of cycle | 29th Dec |
+
+## Stacks and Queues
+Sno | Topic Name | My Solution | Logic Used | Date Completed |
+----|------------|-------------|------------|----------------| 
+1 | Stack using vectors | [stacksImpl](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/StackUsingVectors.cpp) | creating a class stack and using vector stl| 29th Dec |
+2 | Stack STL | [stackSTL](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/Stacktemplate.cpp) | STL | 29th Dec |
+3 | Queue using array | [queue](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/queueUsingArray.cpp) | front and rear pointer with isfull() and isEmpty() methods | 29th Dec|
+4 | Queue STL | [queueSTL](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/queueSTL.cpp) | STL | 29th Dec|
+5 | Stack Reversal using aux stack | [reversal](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/stackReversal.cpp) | use an addition stack. Run a loop till n; In each iteration store the top in temp and transfer rest n-i elements to aux stack; Push the temp to bottom of current stack; Transfer the n-i elements from aux stack to curr stack | 30th Dec|
+6 | Stack reversal using recustion | [stackRecur](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/stackreversalRecursion.cpp) | Implement two functions: reversal and place_at_bottom; reversal constantly calls itself and builds a reverse call stack, then call place_at_bottom with elements of this call stack; Place_at_bottom pushes the element at the bottom, else calls itself to build a call stack to put the element at bottom and then pushes the rest elements into the stack | 30th Dec |
+7 | Balanced Paranthesis | [isBalanced](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/balancedparenthesis.cpp) | push if '(' and pop if ')' ; if the stack is empty at the end then it has a balanced parenthesis | 30th Dec |
+8 | Stock Span | [stockspan](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/StockSpan.cpp) | Creating a stack of indices having strictly decreasing values. ans[i] = i - indice_at_of_stack | 30th Dec|
+9 | Largest area under histogram | [LargestArea](https://github.com/manohar2000/CB-Algorithms/blob/main/Stacks%20and%20Queue/largestareaunderHist.cpp) | creating an leftarray  having indices of smallest hist in the left side and similar for rightside. area under each hist will be (r-l-1)xCurr_len | 5th Jan '21 |
+
+
+## Trees
+Sno | Topic Name | My Solution | Logic Used | Date Completed |
+----|------------|-------------|------------|----------------| 
