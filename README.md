@@ -95,4 +95,23 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 
 ## Trees
 Sno | Topic Name | My Solution | Logic Used | Date Completed |
-----|------------|-------------|------------|----------------| 
+----|------------|-------------|------------|----------------|
+1 | BuildingBST | [implementation](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/BuildingBT.cpp) | pointers and recursion | 4th Jan |
+2 | Height of Tree | [height](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/leverorderraversal.cpp) | recursively call left subtree and right subtree; after reaching the bottom of tree return max(left,right) +1 | 4th Jan |
+3 | Level Order Traversal | [levelorder](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/leverorderraversal.cpp) | recursively call func for left and right subtree while decrementing value of k; if k==1 print the data  | 4th Jan |
+4 | BFS Traversal | [bfs](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/bfstraversal.cpp) | using queue; initializing the queue with root iteratively popping them and pushing their children into the queue until queue is empty | 4th Jan |
+5 | Count and Sum of nodes | [countAndsum](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/countNodeandSum.cpp) | recursively calling the same func for left and right subtrees |  4th Jan |
+6 | Diameter of a Tree | [diameter](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/diameter.cpp) | recursion. diameter can lie in 3 parts, height of the subtree, entirely in the left subtree or entirely in the right sub tree | 4th Jan |
+7 | ReplaceNodebySum | [replaceBysum](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/replaceNodebySum.cpp) | recursion. storing the value of root in a variable and replacing it with sum of children | 4th Jan | 
+8 | BST| [isBalanced](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/isBSTbalanced.cpp) | checking if the root is greater than max of left subtree and less than min of right sub tree and calling the same func for left and right subtrees | 5th Jan |
+
+BST ki kahani abhi baaki hain mere dost!!!
+
+
+
+
+
+
+
+
+
