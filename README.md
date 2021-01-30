@@ -103,10 +103,17 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 5 | Count and Sum of nodes | [countAndsum](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/countNodeandSum.cpp) | recursively calling the same func for left and right subtrees |  4th Jan |
 6 | Diameter of a Tree | [diameter](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/diameter.cpp) | recursion. diameter can lie in 3 parts, height of the subtree, entirely in the left subtree or entirely in the right sub tree | 4th Jan |
 7 | ReplaceNodebySum | [replaceBysum](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/replaceNodebySum.cpp) | recursion. storing the value of root in a variable and replacing it with sum of children | 4th Jan | 
-8 | BST| [isBalanced](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/isBSTbalanced.cpp) | checking if the root is greater than max of left subtree and less than min of right sub tree and calling the same func for left and right subtrees | 5th Jan |
+8 | Is BT Balanced | [isBalanced](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/balanced.cpp) | create a pair of height and isBalanced. recursively call the func for left and right subtree. If (abs(hright-hleft))<=1 and left and right subtree then current subtree is balanced and height = max(left,right)+1 | 5th Jan |
+9 | BST from Sorted Array | [BSTfromArray](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/btfromArray.cpp) | recursion. root->left = func(arr,start,mid-1) root->right = func(mid+1,end). until start>end. | 5th Jan |
+10 | Insertion in BST | [insertion](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/InsertingInBST.cpp) | recursion | 5th Jan |
+11 | Searching in BST | [searching](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/searchinBST.cpp) | recursion | 5th Jan |
+12 | Deletion in BST | [deletion](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/deletioninBST.cpp) | 3 cases; 1. no children, then simply delete. 2. one child, then store the child in temp, delete the root and return temp; 2 children, then return inorder successor | 5th Jan |
+13 | isBSTBalanced | [isBSTBalanced](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/isBSTbalanced.cpp) | checking if the root is greater than max of left subtree and less than min of right sub tree and calling the same func for left and right subtrees | 5th Jan |
+14 | BSTtoLL | [bstToll](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/BSTtoLL.cpp) | !watch video ! | 5th Jan |
 
-BST ki kahani abhi baaki hain mere dost!!!
-
+## Heap
+Sno | Topic Name | My Solution | Logic Used | Date Completed |
+----|------------|-------------|------------|----------------|
 
 
 
