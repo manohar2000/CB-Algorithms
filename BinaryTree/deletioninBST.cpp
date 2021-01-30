@@ -5,7 +5,7 @@ using namespace std;
 /* Deletion in BST basically has 3 cases
  1. Node has no children - delete the node and return NULL 
  2. Node has one child - keep a temp variable as replace the curr node with the immediate node
- 3. Node has no children - replace it with inorder successor.
+ 3. Node has 2 children - replace it with inorder successor.
 */
 
 class node
