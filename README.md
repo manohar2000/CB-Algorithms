@@ -112,11 +112,15 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 14 | BSTtoLL | [bstToll](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/BSTtoLL.cpp) | !watch video ! | 5th Jan |
 
 ## Heap
+A heap is a complete tree.
 Sno | Topic Name | My Solution | Logic Used | Date Completed |
 ----|------------|-------------|------------|----------------|
+1 | Insertion and Deletion | [insertAndDelete](https://github.com/manohar2000/CB-Algorithms/blob/main/Heap/insertAndDelete.cpp) | Implement through a queue. children of a node are always at 2i and 2i+1; heapify: replace the first element with last and then heapify the first element| 6th Jan |
+2 | Heap STL | [heap](https://github.com/manohar2000/CB-Algorithms/blob/main/Heap/heapSTL.cpp) | using queue and funtional(for min heap) header files |  6th Jan |
+3 | Merging K sorted arrays | [mergeKarrays](https://github.com/manohar2000/CB-Algorithms/blob/main/Heap/MergingKsortedarrays.cpp) | create a heap and insert all the first elements of each array; remove the top element of the array and push a element from the same array from which the top element was removed. if array has no elements then push infinite | 6th Jan |
+4 | Median in a stream of integers | [medianInstream](https://github.com/manohar2000/CB-Algorithms/tree/main/Heap) | maintain two heaps, leftheap-a max heap and rightheap-a min heap. if there are any elements in the right queue and right.top() is smaller than current element then add into right queue else add in left queue. The difference b/w sizes of these should not be greater than 1, in such a case transfer the top element. when queried either print the avg, if size equal else print the top of the largest heap | 6th Jan | 
 
-
-
+## Graphs
 
 
 
