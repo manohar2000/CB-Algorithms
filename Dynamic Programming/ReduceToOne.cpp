@@ -5,7 +5,6 @@ using namespace std;
 
 // Problem: Number of steps required to reduce a no. to 1, given we can perform division by 3, division by 2 or subtract with -1
 
-
 int memo[10000];
 
 int bottom_up(int n)
