@@ -109,7 +109,7 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 11 | Searching in BST | [searching](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/searchinBST.cpp) | recursion | 5th Jan |
 12 | Deletion in BST | [deletion](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/deletioninBST.cpp) | 3 cases; 1. no children, then simply delete. 2. one child, then store the child in temp, delete the root and return temp; 2 children, then return inorder successor | 5th Jan |
 13 | isBSTBalanced | [isBSTBalanced](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/isBSTbalanced.cpp) | checking if the root is greater than max of left subtree and less than min of right sub tree and calling the same func for left and right subtrees | 5th Jan |
-14 | BSTtoLL | [bstToll](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/BSTtoLL.cpp) | !watch video ! | 5th Jan |
+14 | BSTtoLL | [bstToll](https://github.com/manohar2000/CB-Algorithms/blob/main/BinaryTree/BSTtoLL.cpp) | Recursion. Create a class LL with node* head and node* tail. There will 4 major cases. root has: 1)no child: ll.head=ll.tail=root;2)only left child:call the recursive func with left child. ll.head=leftll.head and ll.tail=root;3)only right child: ll.head=root and ll.tail=rightll.tail; root has both the children: call function for both the children. ll.head = leftll.head, ll.tail=rightll.tail. In all the cases connect the root accordingly. | 5th Jan |
 
 ## Heap
 A heap is a complete tree.
