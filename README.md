@@ -121,6 +121,16 @@ Sno | Topic Name | My Solution | Logic Used | Date Completed |
 4 | Median in a stream of integers | [medianInstream](https://github.com/manohar2000/CB-Algorithms/tree/main/Heap) | maintain two heaps, leftheap-a max heap and rightheap-a min heap. if there are any elements in the right queue and right.top() is smaller than current element then add into right queue else add in left queue. The difference b/w sizes of these should not be greater than 1, in such a case transfer the top element. when queried either print the avg, if size equal else print the top of the largest heap | 6th Jan | 
 
 ## Graphs
+Sno | Topic Name | My Solution | Logic Used | Date Completed |
+----|------------|-------------|------------|----------------|
+1 | Implementing a graph | [view](Graphs/ArrayOfLLImp.cpp) | Array of Linked Lists | 9th Jan |
+2 | Distance of all nodes from source | [view](Graphs/ShortestPath.cpp) | breadth wise traversal using queue. storing distances in a map. dist(child)=dist(parent from source)+1  | 9th Jan |
+3 | Snakes and Ladders | [view](Graphs/snakesAndLadder.cpp) | making nodes and shortest path | 10th Jan|
+4 | DFS Traversal | [view](Graphs/DFStraversal.cpp) | recursion and map to keep a track of visited nodes | 10th Jan | 
+5 | BFS Traversal | [view](Graphs/bfsTraversal.cpp) | queue and map to keep a track of visited nodes | 12th Jan |
+6 | cycleDetection using BFS | [view](Graphs/cycledetectionBFS.cpp) | map for visited and parent node. while bfs traversal if currNode is visited and parent of node!= currNode then there is a loop | 12th Jan |
+7 | cycleDetection using DFS | [view](Graphs/cycleDetectionDFS.cpp) | recursion, map of nodes in stack and map of visited nodes | 24th Jan |
+8 | Dijsktra Algorithm | [view](Graphs/Dijsktra.cpp) | ---- | 24th Jan |
 
 
 
